@@ -1,4 +1,4 @@
-## Here is list of internal IP's inside my VPC
+## Here is list of internal IPs inside my VPC
 
 Role   |    Hostname                                |   IP         
 Master |ip-172-20-148-75.eu-west-1.compute.internal |172.20.148.75
