@@ -9,7 +9,7 @@
 3. Which CDH service(s) host a property for enabling Kerberos authentication?
 	- All installed within Core hadoop install
 4. How do you upgrade the CM agents?
- - With help of Cloudera Manager upgrade guide. Cause some versions of CM and CDH needs specific upgrade procedure.
+ - Go to Hosts-> All hosts -> Re-run Upgrade wizard. And use Cloudera Manager upgrade guide. Cause some versions of CM and CDH needs specific upgrade procedure. 
 5. Give the `tsquery` statement used to chart Hue's CPU utilization?
  - I think no. Cause Hue is Web interface for hadoop components.
 6. Name all the roles that make up the Hive service
