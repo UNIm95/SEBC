@@ -1,0 +1,3 @@
+       [centos@ip-10-0-0-253 ~]$ sudo cat /var/kerberos/krb5kdc/kadm5.acl 
+       */admin@UNIM95.COM      *
+       cloudera-scm@UNIM95.COM admilc
