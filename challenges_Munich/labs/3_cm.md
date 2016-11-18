@@ -29,15 +29,18 @@ mysql> SHOW GRANTS FOR scm;
 
 [centos@ip-10-0-0-188 ~]$ sudo -u hdfs hdfs dfs -mkdir /user/bavaria
 [centos@ip-10-0-0-188 ~]$ sudo -u hdfs hdfs dfs -mkdir /user/saxony
-[centos@ip-10-0-0-188 ~]$ sudo -u hdfs hdfs dfs -ls /user
-Found 6 items
-drwxr-xr-x   - hdfs   supergroup          0 2016-11-18 10:37 /user/bavaria
-drwxrwxrwx   - mapred hadoop              0 2016-11-18 10:33 /user/history
-drwxrwxr-t   - hive   hive                0 2016-11-18 10:34 /user/hive
-drwxrwxr-x   - hue    hue                 0 2016-11-18 10:35 /user/hue
-drwxrwxr-x   - oozie  oozie               0 2016-11-18 10:35 /user/oozie
-drwxr-xr-x   - hdfs   supergroup          0 2016-11-18 10:38 /user/saxony
-
+[centos@ip-10-0-0-184 ~]$ sudo -u hdfs hdfs dfs -chown -R bavaria:social /user/bavaria
+[centos@ip-10-0-0-184 ~]$ sudo -u hdfs hdfs dfs -chown -R saxony:democratic /user/saxony
+[centos@ip-10-0-0-184 ~]$ sudo -u hdfs hdfs dfs -ls /user
+Found 8 items
+drwxr-xr-x   - admin   admin               0 2016-11-18 10:41 /user/admin
+drwxr-xr-x   - bavaria social              0 2016-11-18 10:52 /user/bavaria
+drwxr-xr-x   - hdfs    supergroup          0 2016-11-18 10:40 /user/hdfs
+drwxrwxrwx   - mapred  hadoop              0 2016-11-18 10:33 /user/history
+drwxrwxr-t   - hive    hive                0 2016-11-18 10:34 /user/hive
+drwxrwxr-x   - hue     hue                 0 2016-11-18 10:35 /user/hue
+drwxrwxr-x   - oozie   oozie               0 2016-11-18 10:35 /user/oozie
+drwxr-xr-x   - saxony  democratic          0 2016-11-18 10:52 /user/saxony
 
 
 
